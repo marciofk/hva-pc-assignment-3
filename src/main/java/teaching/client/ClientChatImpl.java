@@ -12,6 +12,9 @@ public class ClientChatImpl implements ClientChat  {
 
 
 	public ClientChatImpl() {
+
+		System.out.println("Running client app using server " +
+				Config.getInstance().getServer() + ":" + Config.getInstance().getPort());
 		
 		try {
 			ChatServer svc = getService();

@@ -29,6 +29,15 @@ public class Config {
         return Integer.parseInt(config.getProperty("port"));
     }
 
+    public void setServer(String server) {
+        config.setProperty("server",server);
+    }
+
+    public void setPort(int port) {
+        config.setProperty("port",Integer.toString(port));
+    }
+
+
 
     private void loadProperties() {
         try {
